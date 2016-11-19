@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+ <head>  
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta charset="UTF-8" name="vaadin-version" content="7.7.0">
+  <meta charset="UTF-8" name="package-mapping" content="com_pollhq_mymavenproject:com.pollhq.mymavenproject">
+ </head> 
+ <body> 
+  <vaadin-horizontal-layout style-name="valo-menu-responsive" responsive id="responsive-application-template" size-full> 
+   <vaadin-css-layout style-name="valo-menu" width="200px"> 
+    <vaadin-css-layout style-name="valo-menu-part" width="200px"> 
+     <vaadin-horizontal-layout style-name="valo-menu-title" width="200px" height="40px" _id="menuTitle"> 
+      <vaadin-label style-name="bold h4" width="60px" _id="menuTitleLabel" :middle :center :expand> 
+       <strong>PollHQ</strong> 
+      </vaadin-label> 
+     </vaadin-horizontal-layout> 
+     <vaadin-css-layout style-name="valo-menuitems" width="200px" height="482px" _id="menuItems"> 
+      <vaadin-button icon="fonticon://FontAwesome/f233" style-name="icon-align-top borderless" width="200px" height="62px" plain-text _id="pollButton">
+        Answer 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f044" style-name="borderless icon-align-top" width="200px" height="70px" _id="createButton">
+        Create 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f080" style-name="borderless icon-align-top" width="200px" _id="dataButton">
+        Analytics 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f0c0" style-name="borderless icon-align-top" width="200px" _id="friendsButton">
+        Friends 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f06b" style-name="borderless icon-align-top" width="200px" _id="giftButton">
+        Gifts 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f234" style-name="borderless icon-align-top" width="200px" _id="accountButton">
+        Account 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f08b" style-name="borderless icon-align-top" width="200px" plain-text _id="logoutButton">
+        Logout 
+      </vaadin-button> 
+     </vaadin-css-layout> 
+    </vaadin-css-layout> 
+   </vaadin-css-layout> 
+   <vaadin-horizontal-split-panel split-position="66%" _id="mainPanel" :expand> 
+    <vaadin-vertical-layout size-full _id="pollLayout"> 
+     <vaadin-label style-name="huge" size-auto plain-text _id="pollLabel" :center>
+       Poll 
+     </vaadin-label> 
+     <vaadin-panel caption="Current Poll" size-full _id="pollPanel" :expand></vaadin-panel> 
+     <vaadin-panel size-full _id="answerPanel" :middle :center :expand></vaadin-panel> 
+     <vaadin-vertical-layout margin _id="buttonLayout"> 
+      <vaadin-button plain-text _id="submitButton" :center>
+        Submit 
+      </vaadin-button> 
+      <vaadin-button plain-text _id="newPollButton" :bottom :center>
+        New Poll 
+      </vaadin-button> 
+     </vaadin-vertical-layout> 
+    </vaadin-vertical-layout> 
+    <vaadin-vertical-layout size-full _id="feedLayout"> 
+     <vaadin-label style-name="huge" size-auto plain-text _id="feedLabel" :center>
+       Feed 
+     </vaadin-label> 
+     <vaadin-tab-sheet icon="fonticon://FontAwesome/f062" size-full _id="feedTabs" :expand></vaadin-tab-sheet> 
+    </vaadin-vertical-layout> 
+   </vaadin-horizontal-split-panel> 
+  </vaadin-horizontal-layout>  
+ </body>
+</html>

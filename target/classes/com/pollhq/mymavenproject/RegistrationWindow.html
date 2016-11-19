@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta charset="UTF-8" name="vaadin-version" content="7.7.0">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout size-full margin> 
+   <vaadin-label style-name="huge" size-auto plain-text _id="regLabel" :center>
+     Registration 
+   </vaadin-label> 
+   <vaadin-text-field caption="Email" width="1370px" _id="emailField"></vaadin-text-field> 
+   <vaadin-text-field caption="Username" width="1370px" _id="userField"></vaadin-text-field> 
+   <vaadin-text-field caption="Password" width="1370px" _id="passField"></vaadin-text-field> 
+   <vaadin-text-field caption="City" width="1370px" _id="locField"></vaadin-text-field> 
+   <vaadin-combo-box caption="Age" width="1370px" _id="ageBox"> 
+    <option>0-18</option> 
+    <option>19-25</option> 
+    <option>26-35</option> 
+    <option>36-45</option> 
+    <option>46-55</option> 
+    <option>56-65</option> 
+    <option>65+</option> 
+   </vaadin-combo-box> 
+   <vaadin-combo-box caption="Race" width="1370px" _id="raceBox"> 
+    <option>White</option> 
+    <option>Black</option> 
+    <option>Asian</option> 
+    <option>Hispanic</option> 
+    <option>Indian</option> 
+    <option>Other</option> 
+   </vaadin-combo-box> 
+   <vaadin-combo-box caption="Gender" width="1370px" _id="genderBox"> 
+    <option>Male</option> 
+    <option>Female</option> 
+    <option>Other</option> 
+   </vaadin-combo-box> 
+   <vaadin-combo-box caption="Education" width="1370px" _id="eduBox"> 
+    <option>None</option> 
+    <option>High School</option> 
+    <option>Bachelors Degree</option> 
+    <option>Professional Degree</option> 
+   </vaadin-combo-box> 
+   <vaadin-button style-name="friendly" width="521px" height="48px" plain-text _id="regButton" :center>
+     Let's Go! 
+   </vaadin-button> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta charset="UTF-8" name="vaadin-version" content="7.7.0">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout size-full margin> 
+   <vaadin-label style-name="huge" width-auto height="45px" plain-text _id="nameLabel" :middle :center>
+     PollHQ 
+   </vaadin-label> 
+   <vaadin-panel size-full _id="textPanel" :expand> 
+    <vaadin-vertical-layout size-full _id="textLayout"> 
+     <vaadin-text-field input-prompt="email" width="615px" height="70px" _id="userField" :middle :center></vaadin-text-field> 
+     <vaadin-text-field input-prompt="password" width="616px" height="70px" _id="passField" :middle :center></vaadin-text-field> 
+    </vaadin-vertical-layout> 
+   </vaadin-panel> 
+   <vaadin-panel _id="butPanel"> 
+    <vaadin-horizontal-layout width-full margin _id="buttonLayout"> 
+     <vaadin-button width="230px" height="68px" plain-text _id="loginButton" :center>
+       Login 
+     </vaadin-button> 
+     <vaadin-button width="230px" height="68px" plain-text _id="registerButton" :center>
+       Register 
+     </vaadin-button> 
+     <vaadin-button width="230px" height="68px" plain-text _id="fbButton" :center>
+       Facebook Login 
+     </vaadin-button> 
+    </vaadin-horizontal-layout> 
+   </vaadin-panel> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>
