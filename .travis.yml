@@ -1,2 +1,17 @@
 language: java
-mvn test
+jdk: openjdk6
+after_success: "./.travis.after_success.sh"
+sudo: required
+dist: trusty
+branches:
+  only:
+  - master
+cache:
+  directories:
+  - "$HOME/.m2"
+before_cache:
+- rm -rf $HOME/.m2/repository/com/vaadin
+env:
+  global:
+  - secure: prgJpOSrHld6BLLIF4M/xRGi4NFZFBu4Ps+j1BcPVFsAQgT9Ae5uPkUy6EDz7qr9tTrRuHp1B9wXwkIZfr2RmTg0qNMliPuqTs/49yBsrlsOwotMCKemfOJMyi870ooKkh/cMDUZDSyKJsXY7G4stmOOVHPDq/6tkdnFtX4eIqFANVBIvdTS0uxmezoXWK6Mp/VG++EhWXK1kLYc5e/+tR26AUFAGgKT2EcxG5YDeipAcq0umaj3zY5U4rZoPhIDjLLmZuwuQeMoHpWR+N7Jd7mBPL+SCsAK3oVJyBTRjEwjRYleQ9q9tEQuCzPlaZdDa2m66wmBHJEJ/av12yQyNz02YXO6GI7kaAvTGw8NE9t0MqFJk6lpbnCE4B8xNpoq4WZXtMK12nuapGJzZrgLBoVuWSg7tpgHFe751Mq3w3MnIM5QrOF7nrjKvelPGnKXFSAM+L292GXBfgUbWFqnUSZ+nrF/OLWQJQW/kr5TFSojxrdkdfvAwFCD0/mx/+O4+lkiVWuOADUBOcHxo9TCuXWnZDFRbLzRP/Hbk7/kB1MXEOGxcn5keuPdEYI4qfxMu7rW4dmSX99u4wB4x1ngWE7e1r+xIzCA4o8IhVn+u5DlMIdt1CGatS/142u3V5Eb41L1YhHjbhbx0Tf8+buUh6gKRBGPuka3reiac35diNs=
+  - secure: EjFKLvs+eIbmr5fGTmBmvQxU9/m6WyFZkBFot3jHWRm3Q/SGr3hHOionIG8RhwLVnVRywsMt49ufGeOMDwYJDix8MwoAI/S6UZKjBKkTRcgtlwH
